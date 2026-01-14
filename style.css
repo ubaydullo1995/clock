@@ -207,17 +207,18 @@
 #hover {
     width: 100%;
     height: 100%;
-    transform: rotate(120deg);
+    animation: sec 43200s steps(60, end)infinite;
 }
 
 #hover::after {
     content: "";
+    /* transform: rotate(120deg); */
     width: 12px;
     height: 65px;
     border-radius: 4px 4px 6px 6px;
     background-color: #07f3dfb4;
     position: absolute;
-    left: calc(50% - 4px);
+    left: calc(50% - 6px);
     top: 50%;
     box-shadow: 1px 0 4px #00000026;
 }
